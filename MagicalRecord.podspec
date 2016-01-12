@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.framework    = 'CoreData'
   s.header_dir   = 'MagicalRecord'
   s.source_files = 'MagicalRecord/**/*.{h,m}'
+  s.dependency 'CocoaLumberjack', '~> 2.0'
   s.prefix_header_contents = <<-EOS
 #import <CoreData/CoreData.h>
 #import <MagicalRecord/MagicalRecord.h>
